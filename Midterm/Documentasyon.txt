@@ -1,0 +1,62 @@
+
+
+151044012
+
+UGURKAN ATES
+
+// NOTE BIG NOTE  please compile with makefile or if you are gonna compile by own please add -lm for math.h in client compile.
+gcc -o client seeWhat.c -lm
+gcc -o server timerServer.c
+gcc -o show showResult.c
+**** ADDED some SHIFTED INVERSE RESULTS in example .txt = 02.52 time
+*** ADDED MY REFERENE PDF MADE BY SOME STUDENT IN CLASS(REFERENCE)
+** bile bile bıraktım executable run hallerini sıkıntı olmasın diye compile sırasında.
+
+
+
+LAST ENTRY 02.29
+
+DOCUMENTATION  FILE FOR midterm 2017. 
+
+THIS CODE has value as demo so please read carefully/write.
+
+
+What does my SeeWhat and its log.do
+1-it takes server pid via fifo
+2-it can send signal with server pid(it sends SIGUSR1) 
+for requesting matrix randomly 
+3-it can get randomly created matrix from timerserver
+4-it uses calculates shifted inverse prints on screen and log file
+5-it calculate tiem of shifted inverse calculation very cool
+6-it has ctrl c sigint signal handler for intterups from other terminals(not working %5 of times , %95 it works)
+7-it can kill other terminals via its ctrl c + kill handler
+8-can print og matrix and shifted ones pretty cool.
+9-it forks for 2d calculation or shifted inverse, though it can only calculate shifted inverse at the moment.
+
+
+what cant do (we were supposed to)
+1-i didnt have time to communicate with showresults due deadline so i did "showresult job" in here
+2-couldnt calculate 2d convolution just shifted inverse.
+
+
+what does timerServer and its log.do
+1-it sends pid to clients
+2-it has signal handlers (such as sigint,sigusr1 etc)
+3-it kills all terminals and prints them who killed first and others via ctrl +c
+4-it prints matris determinant, milisecond and client pid  pretty cool
+5-it creates random , invertible matris  2nx2n. calculates shifted_inverse(totally i wrote the code so for effort ^_^)
+// co_factor function taken from stackoverflow.com (couldnt find spesific link)
+6-it blocks signals for spesific time given resolution from command argument
+
+
+what cant do
+1-again no communcation or anything with showResults.
+2-didnt look carefully for valgrind.
+3-error checking is not completlely done due lack of time/deadline.
+
+
+
+
+show results:
+does nothing at the moment.
+

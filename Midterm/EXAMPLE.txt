@@ -1,0 +1,43 @@
+there is OG   one
+5.000000
+9.000000
+0.000000
+2.000000
+there is shifted inverse one
+0.200000
+-0.900000
+-0.000000
+0.500000
+there is OG   one
+5.000000
+0.000000
+5.000000
+8.000000
+there is shifted inverse one
+0.200000
+-0.000000
+-0.125000
+0.125000
+there is OG   one
+9.000000
+3.000000
+4.000000
+0.000000
+there is shifted inverse one
+-0.000000
+0.250000
+0.333333
+-0.750000
+there is OG   one
+4.000000
+0.000000
+9.000000
+3.000000
+there is shifted inverse one
+0.250000
+-0.000000
+-0.750000
+0.333333
+How long it taken to calculate Shifted_inverse matrix
+320How long it taken to calculate Shifted_inverse matrix
+320
